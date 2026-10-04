@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>مستلزمات الشفاء | أدوات ومستلزمات طبية</title>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f3f8f7;--surface:#fff;--ink:#12302f;--muted:#4f6b69;--brand:#0b6b6f;--brand-ink:#fff;--tint:#d6eeea;--accent:#f0b429;--line:#cfe0dd;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0d1c1c;--surface:#142928;--ink:#e6f3f1;--muted:#9bb8b4;--brand:#3cc2c0;--brand-ink:#082322;--tint:#1c3a39;--accent:#f0b429;--line:#25423f}}
+:root[data-theme="dark"]{--bg:#0d1c1c;--surface:#142928;--ink:#e6f3f1;--muted:#9bb8b4;--brand:#3cc2c0;--brand-ink:#082322;--tint:#1c3a39;--accent:#f0b429;--line:#25423f}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"IBM Plex Sans Arabic",Tahoma,Arial,sans-serif;line-height:1.7}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+header{background:var(--surface);border-bottom:1px solid var(--line);position:sticky;top:env(safe-area-inset-top,0px);z-index:5}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 0}
+.logo{font-weight:700;font-size:1.25rem;display:flex;align-items:center;gap:8px;text-decoration:none}
+.logo i{width:30px;height:30px;border-radius:8px;background:var(--brand);position:relative;display:inline-block}
+.logo i:before,.logo i:after{content:"";position:absolute;background:var(--brand-ink);border-radius:2px}
+.logo i:before{width:16px;height:4px;top:13px;left:7px}.logo i:after{width:4px;height:16px;top:7px;left:13px}
+.cartbtn{border:1px solid var(--brand);background:transparent;color:var(--brand);font:inherit;font-weight:500;padding:8px 16px;border-radius:999px;cursor:pointer}
+.cartbtn b{background:var(--brand);color:var(--brand-ink);border-radius:999px;padding:0 8px;margin-inline-start:6px}
+.hero{padding:56px 0 40px;display:grid;gap:28px;grid-template-columns:1.3fr 1fr;align-items:center}
+.hero h1{font-size:clamp(2rem,5vw,3.2rem);line-height:1.25;margin:0 0 14px;max-width:16ch}
+.hero p{color:var(--muted);font-size:1.1rem;max-width:46ch;margin:0 0 22px}
+.btn{display:inline-block;background:var(--brand);color:var(--brand-ink);padding:12px 26px;border-radius:10px;font-weight:700;text-decoration:none;border:0;font:inherit;font-weight:700;cursor:pointer}
+.facts{background:var(--tint);border-radius:18px;padding:22px;display:grid;gap:14px}
+.facts div{display:flex;gap:12px;align-items:flex-start}
+.facts span{font-size:1.5rem}
+.facts strong{display:block}
+.facts small{color:var(--muted)}
+h2{font-size:1.6rem;margin:36px 0 14px}
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:20px}
+.filters button{font:inherit;border:1px solid var(--line);background:var(--surface);color:var(--ink);padding:6px 16px;border-radius:999px;cursor:pointer}
+.filters button[aria-pressed="true"]{background:var(--brand);color:var(--brand-ink);border-color:var(--brand)}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fill,minmax(220px,1fr))}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;overflow:hidden;display:flex;flex-direction:column}
+.thumb{background:var(--tint);font-size:3rem;text-align:center;padding:22px 0}
+.info{padding:14px 16px 16px;display:flex;flex-direction:column;gap:4px;flex:1}
+.info h3{margin:0;font-size:1.05rem}
+.info small{color:var(--muted)}
+.row{display:flex;justify-content:space-between;align-items:center;margin-top:auto;padding-top:10px}
+.price{font-weight:700;font-size:1.1rem}
+.add{font:inherit;font-weight:500;background:var(--brand);color:var(--brand-ink);border:0;border-radius:8px;padding:6px 14px;cursor:pointer}
+.order{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:24px;margin:40px 0;display:none}
+.order.open{display:block}
+.order li{display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px dashed var(--line);list-style:none}
+.order ul{padding:0;margin:0 0 14px}
+.order input{font:inherit;padding:10px 12px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink);width:100%;max-width:340px;margin-bottom:12px;display:block}
+footer{border-top:1px solid var(--line);padding:24px 0;color:var(--muted);font-size:.95rem;margin-top:40px}
+@media(max-width:760px){.hero{grid-template-columns:1fr;padding-top:32px}}
+</style>
+</head>
+<body>
+<header><div class="wrap bar">
+<a class="logo" href="#"><i></i>مستلزمات الشفاء</a>
+<button class="cartbtn" id="cartbtn" aria-label="فتح سلة الطلب">سلة الطلب<b id="count">0</b></button>
+</div></header>
+
+<main class="wrap">
+<section class="hero">
+<div>
+<h1>كل ما يحتاجه بيتك وعيادتك من مستلزمات طبية</h1>
+<p>أجهزة قياس، مستلزمات إسعاف، ومعدات عناية منزلية بأسعار واضحة وتوصيل سريع.</p>
+<a class="btn" href="#products">تصفح المنتجات</a>
+</div>
+<div class="facts">
+<div><span>🚚</span><p style="margin:0"><strong>توصيل خلال 48 ساعة</strong><small>لجميع المحافظات</small></p></div>
+<div><span>✅</span><p style="margin:0"><strong>منتجات أصلية</strong><small>بضمان من المورد</small></p></div>
+<div><span>💬</span><p style="margin:0"><strong>استشارة قبل الشراء</strong><small>نساعدك في اختيار المناسب</small></p></div>
+</div>
+</section>
+
+<section id="products">
+<h2>المنتجات</h2>
+<div class="filters" id="filters"></div>
+<div class="grid" id="grid"></div>
+</section>
+
+<section class="order" id="order" aria-live="polite">
+<h2 style="margin-top:0">طلبك</h2>
+<ul id="items"></ul>
+<p><strong>الإجمالي: <span id="total">0</span> جنيه</strong></p>
+<label for="name">الاسم</label>
+<input id="name" autocomplete="name">
+<label for="phone">رقم الهاتف</label>
+<input id="phone" type="tel" autocomplete="tel" inputmode="tel">
+<button class="btn" id="send">إرسال الطلب عبر واتساب</button>
+</section>
+</main>
+
+<footer><div class="wrap">مستلزمات الشفاء · الأسعار المعروضة تجريبية وتُعدَّل حسب مخزونك · المنتجات الطبية لا تغني عن استشارة الطبيب.</div></footer>
+
+<script>
+var P=[
+{n:"جهاز قياس ضغط الدم",c:"أجهزة قياس",p:850,i:"🩺",d:"رقمي للذراع"},
+{n:"جهاز قياس السكر",c:"أجهزة قياس",p:420,i:"🩸",d:"مع 25 شريط"},
+{n:"ميزان حرارة رقمي",c:"أجهزة قياس",p:120,i:"🌡️",d:"قراءة خلال 10 ثوانٍ"},
+{n:"جهاز قياس الأكسجين",c:"أجهزة قياس",p:350,i:"🫁",d:"للإصبع بشاشة واضحة"},
+{n:"حقيبة إسعافات أولية",c:"إسعاف",p:300,i:"🧰",d:"60 قطعة"},
+{n:"كمامات طبية (50)",c:"وقاية",p:90,i:"😷",d:"ثلاث طبقات"},
+{n:"قفازات فحص (100)",c:"وقاية",p:180,i:"🧤",d:"لاتكس بدون بودرة"},
+{n:"كرسي متحرك",c:"عناية منزلية",p:3800,i:"🦽",d:"قابل للطي"},
+{n:"عكاز ألمنيوم",c:"عناية منزلية",p:350,i:"🦯",d:"ارتفاع قابل للتعديل"},
+{n:"جهاز بخار (نيبولايزر)",c:"عناية منزلية",p:900,i:"💨",d:"للكبار والأطفال"}
+];
+var cart={},cat="الكل";
+var cats=["الكل"].concat(P.map(function(x){return x.c}).filter(function(v,i,a){return a.indexOf(v)===i}));
+var $=function(id){return document.getElementById(id)};
+function fmt(n){return n.toLocaleString("ar-EG")}
+function drawFilters(){
+$("filters").innerHTML="";
+cats.forEach(function(c){var b=document.createElement("button");b.textContent=c;b.setAttribute("aria-pressed",c===cat);b.onclick=function(){cat=c;drawFilters();drawGrid()};$("filters").appendChild(b)})}
+function drawGrid(){
+$("grid").innerHTML="";
+P.forEach(function(x,idx){
+if(cat!=="الكل"&&x.c!==cat)return;
+var d=document.createElement("article");d.className="card";
+d.innerHTML='<div class="thumb" aria-hidden="true">'+x.i+'</div><div class="info"><h3>'+x.n+'</h3><small>'+x.d+'</small><div class="row"><span class="price">'+fmt(x.p)+' جنيه</span><button class="add" data-i="'+idx+'">أضف للسلة</button></div></div>';
+$("grid").appendChild(d)});
+Array.prototype.forEach.call(document.querySelectorAll(".add"),function(b){b.onclick=function(){var i=b.dataset.i;cart[i]=(cart[i]||0)+1;drawCart();b.textContent="تمت الإضافة";setTimeout(function(){b.textContent="أضف للسلة"},900)}})}
+function drawCart(){
+var n=0,t=0,h="";
+Object.keys(cart).forEach(function(i){var q=cart[i],x=P[i];n+=q;t+=q*x.p;h+="<li><span>"+x.n+" × "+fmt(q)+"</span><span>"+fmt(q*x.p)+" جنيه</span></li>"});
+$("count").textContent=fmt(n);$("items").innerHTML=h||"<li>السلة فارغة. أضف منتجًا من القائمة.</li>";$("total").textContent=fmt(t);
+if(n)$("order").classList.add("open")}
+$("cartbtn").onclick=function(){$("order").classList.toggle("open");$("order").scrollIntoView({behavior:"smooth"})};
+$("send").onclick=function(){
+var lines=Object.keys(cart).map(function(i){return "- "+P[i].n+" × "+cart[i]});
+if(!lines.length){alert("أضف منتجًا واحدًا على الأقل.");return}
+var msg="طلب جديد%0Aالاسم: "+encodeURIComponent($("name").value)+"%0Aالهاتف: "+encodeURIComponent($("phone").value)+"%0A"+encodeURIComponent(lines.join("\n"))+"%0Aالإجمالي: "+$("total").textContent+" جنيه";
+window.open("https://wa.me/201055616684?text="+msg,"_blank")};
+drawFilters();drawGrid();drawCart();
+</script>
+</body>
+</html>
